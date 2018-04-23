@@ -43,7 +43,7 @@
 					</form>
 					</div>
 					</br>
-					<a href="/Prueba/empresas.php">Ver Empresas</a>
+					<a href="/empresas.php">Ver Empresas</a>
 				</div>
 			</div>
 		</div>

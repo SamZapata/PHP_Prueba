@@ -15,7 +15,7 @@
 					<table border="3" class="text-center">
 						<thead>
 							<tr>
-								<a href="/Prueba/index.php">Registrar Empresa</a>
+								<a href="/index.php">Registrar Empresa</a>
 								<!-- <th colspan="4">Lista de Contacto</th> -->
 							</tr>
 						</thead>
