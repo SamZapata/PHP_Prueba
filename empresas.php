@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lista Empresas</title>
+	<title>Empresas</title>
 	<!-- get bootstrap to build responsive site -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 </head>
@@ -15,36 +15,16 @@
 					<table border="3" class="text-center">
 						<thead>
 							<tr>
-								<a href="/index.php">Registrar Empresa</a>
+								<a href="/PHP_Prueba/index.php">Registrar Empresa</a>
 								<!-- <th colspan="4">Lista de Contacto</th> -->
 							</tr>
 						</thead>
 						<div class="table-responsive">
-						<tbody class="table">
-							<tr>
-								<td><strong>Contacto</strong></td>
-								<td><strong>Empresa</strong></td>
-								<td><strong>Dirección</strong></td>
-								<td><strong>Url</strong></td>
-								<td><strong>Actualizar</strong></td>
-							</tr>
+						
 							<?php 
-								include ("db_select.php");
-								$consulta = query_select();
-								while ($row = mysqli_fetch_assoc($consulta)) {
+								include 'database/db_select.php';
 							?>
-							<tr>
-								<?php $row['id_empresa'] ?>
-								<td><?php echo $row['cont_nombre']; ?></td>
-								<td><?php echo $row['empr_nombre']; ?></td>
-								<td><?php echo $row['empr_direccion']; ?></td>
-								<td><?php echo $row['url_name']; ?></td>
-								<td><a href="actualizar.php?id_empresa=<?php echo $row['id_empresa']; ?> ">Actualizar</a></td>
-							</tr>
-							<?php
-								}
-							?>
-						</tbody>
+						
 						</div>
 					</table>
 
